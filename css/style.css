@@ -389,7 +389,6 @@ body {
 .social-item {
   display: flex;
   justify-content: center;
-  border-radius: 50%;
 }
 
 .social-link {
@@ -398,10 +397,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -409,8 +409,8 @@ body {
   fill: var(--icon-primery-color);
 }
 
-.social-item:hover .social-icon,
-.social-item:focus .social-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   fill: var(--accent-secondary-color);
 }
 
@@ -436,15 +436,15 @@ body {
   margin-top: 90px;
 }
 
-.client-item {
+.client-item .link {
+  margin-left: 30px;
+  border: 1px solid var(--icon-primery-color);
+  border-radius: 4px;
   width: 170px;
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
-  border: 1px solid var(--icon-primery-color);
-  border-radius: 4px;
 }
 
 .client-icon {
@@ -455,15 +455,15 @@ body {
   margin-left: 0px;
 }
 
-.client-item:focus,
-.client-item:hover {
+.client-item .link:hover,
+.client-item .link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   /* fill: var(--accent-color); */
 }
 
-.client-item:focus .client-icon,
-.client-item:hover .client-icon {
+.client-item .link:hover .client-icon,
+.client-item .link:focus .client-icon {
   fill: var(--accent-color);
 }
 
@@ -569,8 +569,12 @@ body {
 }
 
 .social-title {
-  font-weight: 500;
-  line-height: 1.172;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-secondary-color);
 }
@@ -582,15 +586,17 @@ body {
 .social.down {
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 0px;
 }
 
 footer .social-item {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 footer .social-icon {
-  fill: var(-icon-primery-color);
+  fill: var(--accent-secondary-color);
 }
 
 .footer {
