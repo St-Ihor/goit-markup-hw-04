@@ -451,8 +451,8 @@ body {
   fill: var(--icon-primery-color);
 }
 
-.client-item:first-child {
-  margin-left: 0px;
+.client .list {
+  margin-left: -30px;
 }
 
 .client-item .link:hover,
